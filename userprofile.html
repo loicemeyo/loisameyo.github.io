@@ -9,11 +9,10 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <style>
             #doc3 {
-             
-                           margin: auto 10px;
-                           width: auto;
-                           height: 2000px;
-                           background-color: rgb(148, 40, 40);
+    margin: auto 10px;
+     width: auto;
+    height: 2000px;
+    background-color: rgb(148, 40, 40);
                }
            #foot{
                background-color: darkkhaki;
@@ -49,17 +48,30 @@
                  background-color: black;
                  color: white;
                 }  
-                textarea {
-    width: 100%;
-    height: 150px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-    font-size: 16px;
-    resize: none;
-}                
+table {
+    width:300;
+    margin-left: 100px;
+        }
+ table, th, td {
+     border: 1px solid black;
+    border-collapse: collapse;
+    }
+th, td {
+ padding: 15px;
+ text-align: left;
+ color: black;
+ }
+  table#t01 tr:nth-child(even) {
+ background-color: #eee;
+ }
+table#t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+table#t01 th {
+ background-color: black;
+color: white;
+ }
+             
 </style>
 </head>
 <body>
@@ -78,9 +90,8 @@
            </ul>
         </div>
         <div class="w3 container">
-           <h1 style="color:linen; text-align:center;">User profile</h1>
-                        
-      <div></div>>
+           <h1 style="color:linen"> User Profile</h1>
+      <div></div>
           <table id="t01">
               <tr class="tr">
                   <img src="images/user.png" height="120" width="120"></tr><br><br>
@@ -102,15 +113,57 @@
                   <tc>
                         <input type="text" name="booksyear" placeholder="4"><br>
                       </tc>
-                  <tc>
-                  
-                  <tc>
+                <br><br>
+            </table>
+     
+<h5 style="color:linen">Books borrowed this year</h5>
+          <div class="scroll" style="overflow-y:auto;">
+                <table id="t01">
+                       <tr>
+                         <th>Category</th>
+                         <th>Book Title</th>
+                         <th>Author</th> 
+                         <th>Year of Publication</th>
+                         <th></th>
+                       </tr>
+                       <tr>
+                         <td>Sports</td>
+                         <td>Preparing for WorldCup in Russia</td>
+                         <td>Mutua Benson</td>
+                         <td>2005</td>
+                         <td>
+                             <button>Not returned</button>
+                             </td>
+                       </tr>
+                       <tr>
+                         <td></td>
+                         <td>Peace in the Horn of Africa</td>
+                         <td>Timothy Ndeche</td>
+                         <td>2000</td>
+                         <td>
+                        <button>Pick book</button>
+                         </td>
+                       </tr>
+                       <tr>
+                         <td>Education</td>
+                         <td>The Rise of Institutional Strikes in Kenya </td>
+                         <td>Anyangu Omutole</td>
+                         <td>2002</td>
+                         <td>
+                        <button>Not returned</button>
+                        </td>
+                       </tr>
+                       <tr>
+                        <td>Business</td>
+                        <td>Financial Accounting </td>
+                        <td>Anyangu Omutole</td>
+                        <td>2002</td>
+                        <td>
+                        <button>Not returned</button>
+                           </td>
+                       </table>
+          
 
-                  </tc><br><br>
-             
-              
-                   </table>
-          <br>
 
         </div>
       </div>
